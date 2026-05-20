@@ -19,12 +19,8 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Daten (zu groß / nicht redistributierbar)
-data/
-*.csv
-
-# Aber: kleine aggregierte CSVs für die Streamlit-App ZULASSEN
-!streamlit_app/data/*.csv
+# Rohdaten im Wurzelverzeichnis ausschließen (zu groß / nicht redistributierbar)
+/data/
 
 # Office-Temp-Files
 ~$*
