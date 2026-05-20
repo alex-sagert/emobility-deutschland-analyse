@@ -23,6 +23,9 @@ Thumbs.db
 data/
 *.csv
 
+# Aber: kleine aggregierte CSVs für die Streamlit-App ZULASSEN
+!streamlit_app/data/*.csv
+
 # Office-Temp-Files
 ~$*
 

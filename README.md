@@ -1,3 +1,30 @@
+## 🚀 Live Demo
+
+Die interaktive Streamlit-Dashboard-Version dieses Projekts ist online verfügbar:
+**[👉 zum Live-Dashboard](#)** *(Link wird nach Streamlit Cloud Deployment hier eingetragen)*
+
+Features:
+- 📊 Übersicht mit TL;DR und KPIs auf einen Blick
+- 🗺️ Filterbar Bundesländer-Vergleich mit dynamischer Heatmap
+- 📈 Zeitlicher Trend mit Slidern und Multi-Bundesländer-Vergleich
+
+## 🖥️ Lokal starten
+
+```bash
+# Virtual Environment aktivieren
+.\venv\Scripts\Activate.ps1  # Windows
+source venv/bin/activate     # macOS/Linux
+
+# Bibliotheken installieren
+pip install -r requirements.txt
+
+# Notebook (vollständige Analyse)
+jupyter notebook notebooks/emobility.ipynb
+
+# Streamlit-Dashboard
+streamlit run streamlit_app/app.py
+```
+
 # E-Mobilität Deutschland — Datenanalyse
 
 **Projektarbeit Woche 4 — Python-Weiterbildung educx**

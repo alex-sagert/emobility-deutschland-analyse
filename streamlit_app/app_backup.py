@@ -12,7 +12,9 @@ import seaborn as sns
 
 # Eigene Daten-Loader aus lade_daten.py importieren
 from lade_daten import (
+    lade_ladesaeulen,
     lade_kba_alle_monate,
+    lade_fz1_bestand,
     baue_versorgungstabelle,
 )
 
@@ -32,7 +34,9 @@ st.set_page_config(
 # DATEN LADEN (gecached - läuft nur einmal beim App-Start)
 # ===================================================================
 with st.spinner("Lade Daten..."):
+    df_ladesaeulen = lade_ladesaeulen()
     df_kba = lade_kba_alle_monate()
+    df_bestand = lade_fz1_bestand()
     versorgung = baue_versorgungstabelle()
 
 
@@ -55,7 +59,7 @@ with st.sidebar:
     st.markdown("---")
 
     st.subheader("📊 Kennzahlen")
-    st.metric("Ladeeinrichtungen gesamt", f"{int(versorgung['Anzahl_Ladeeinrichtungen'].sum()):,}".replace(",", "."))
+    st.metric("Ladeeinrichtungen gesamt", f"{len(df_ladesaeulen):,}".replace(",", "."))
     st.metric("Ladepunkte gesamt", f"{int(versorgung['Anzahl_Ladepunkte'].sum()):,}".replace(",", "."))
     st.metric("BEV-Bestand gesamt", f"{int(versorgung['BEV_Bestand'].sum()):,}".replace(",", "."))
 
