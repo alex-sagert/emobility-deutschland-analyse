@@ -1,0 +1,5 @@
+# Diese Dateien NICHT in GitHub-Sprachstatistik mitzählen
+emobility_final.html linguist-generated=true
+output/emobility_final.html linguist-generated=true
+*.html linguist-documentation
+*.ipynb linguist-detectable=true

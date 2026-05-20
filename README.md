@@ -82,7 +82,7 @@ Projektarbeit Woche 4/
 │       ├── 07_dashboard.png
 │       └── 08_seaborn_bundeslaender_kennzahlen.png
 ├── docs/
-├── emobility_final.html            (HTML-Export für Präsentation/Notion)
+├── output/emobility_final.html            (HTML-Export für Präsentation/Notion)
 ├── README.md                       (diese Datei)
 └── requirements.txt                (Bibliotheks-Versionen)
 ```
