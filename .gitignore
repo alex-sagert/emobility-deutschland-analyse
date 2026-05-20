@@ -27,3 +27,6 @@ Thumbs.db
 
 # Streamlit Cache
 .streamlit/
+
+# Persönliche Notizen / Chatverlauf
+docs/
