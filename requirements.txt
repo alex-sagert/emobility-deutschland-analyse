@@ -1,0 +1,38 @@
+# E-Mobilität Deutschland — Datenanalyse
+# Python ≥ 3.11 empfohlen
+#
+# Installation auf einem neuen System:
+#   1) Virtual Environment anlegen und aktivieren:
+#        python -m venv .venv
+#        .\.venv\Scripts\Activate.ps1     (Windows PowerShell)
+#        source .venv/bin/activate         (macOS/Linux)
+#
+#   2) Bibliotheken installieren:
+#        pip install -r requirements.txt
+#
+#   3) In VS Code: .venv als Kernel im Notebook auswählen
+
+
+# --- Datenverarbeitung ---
+pandas>=2.0.0
+numpy>=1.24.0
+
+# --- Excel-Support (für KBA-Dateien fz1, fz2, fz28) ---
+# WICHTIG: openpyxl wird zwingend benötigt, um .xlsx-Dateien einzulesen.
+# Ohne diese Bibliothek schlägt pd.read_excel() fehl.
+openpyxl>=3.1.0
+
+# --- Visualisierung ---
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# --- Statistik / Wissenschaftliches Rechnen ---
+# Wird von seaborn intern für manche Plots genutzt
+scipy>=1.11.0
+
+# --- Optional: Machine Learning / fortgeschrittene Analysen ---
+# Nicht zwingend für dieses Projekt, aber im Kurskontext üblich
+scikit-learn>=1.3.0
+
+# --- Jupyter-Kernel (für VS Code Notebook-Ausführung) ---
+ipykernel>=6.25.0

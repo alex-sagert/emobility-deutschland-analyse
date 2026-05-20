@@ -1,0 +1,30 @@
+# Virtuelle Environments
+venv/
+.venv/
+env/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Daten (zu groß / nicht redistributierbar)
+data/
+*.csv
+
+# Office-Temp-Files
+~$*
+
+# Streamlit Cache
+.streamlit/
