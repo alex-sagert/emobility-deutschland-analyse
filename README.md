@@ -1,7 +1,7 @@
 ## 🚀 Live Demo
 
 Die interaktive Streamlit-Dashboard-Version dieses Projekts ist online verfügbar:
-**[👉 zum Live-Dashboard](#)** *(Link wird nach Streamlit Cloud Deployment hier eingetragen)*
+**[👉 zum Live-Dashboard](https://alex-emobility.streamlit.app)**
 
 Features:
 - 📊 Übersicht mit TL;DR und KPIs auf einen Blick
