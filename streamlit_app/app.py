@@ -80,22 +80,28 @@ with tab1:
     # ---- TL;DR / Executive Summary ----
     st.markdown("### 📌 TL;DR — Die fünf wichtigsten Erkenntnisse")
 
-    st.markdown("""
+   st.markdown("""
     <style>
     .summary-box {
-        background-color: #f0f7ff;
+        background-color: #f0f7ff !important;
         border-left: 4px solid #0969da;
         padding: 16px 20px;
         margin: 6px 0;
         border-radius: 4px;
+        color: #1a1a1a !important;
+    }
+    .summary-box b {
+        color: #000000 !important;
     }
     .summary-box-warning {
-        background-color: #fff8e1;
+        background-color: #fff8e1 !important;
         border-left: 4px solid #f59f00;
+        color: #1a1a1a !important;
     }
     .summary-box-success {
-        background-color: #e8f5e9;
+        background-color: #e8f5e9 !important;
         border-left: 4px solid #2e7d32;
+        color: #1a1a1a !important;
     }
     </style>
     """, unsafe_allow_html=True)
