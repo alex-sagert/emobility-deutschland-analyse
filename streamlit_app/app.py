@@ -80,7 +80,7 @@ with tab1:
     # ---- TL;DR / Executive Summary ----
     st.markdown("### 📌 TL;DR — Die fünf wichtigsten Erkenntnisse")
 
-   st.markdown("""
+    st.markdown("""
     <style>
     .summary-box {
         background-color: #f0f7ff !important;
